@@ -1,0 +1,18 @@
+# compose dev env
+---
+version: '3.9'
+
+networks:
+  ks-dev:
+    name: ks-dev
+    driver: bridge
+
+services:
+  redis-stack:
+    image: redis/redis-stack:latest
+    container_name: redis-stack
+    ports:
+      - 6379:6379
+      - 8001:8001
+    networks:
+      - ks-dev
