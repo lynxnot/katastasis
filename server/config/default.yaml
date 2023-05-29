@@ -1,0 +1,4 @@
+---
+server:
+  port: 1337
+  metricsPort: 9142
