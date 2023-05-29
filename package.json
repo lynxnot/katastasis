@@ -1,0 +1,18 @@
+{
+  "name": "katastasis",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A status page for your services",
+  "workspaces": [
+    "server",
+    "app"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run --workspace=server dev\" \"npm run --workspace=app dev\""
+  },
+  "author": "lynxnot",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
