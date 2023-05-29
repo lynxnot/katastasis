@@ -1,5 +1,5 @@
 {
-  "name": "katastasis",
+  "name": "katastasis-server",
   "version": "0.1.0",
   "description": "A status page for your services",
   "main": "index.js",
